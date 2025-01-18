@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #231942;
+    color: #DEDBD2;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.turns-box {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.turns {
+    height: 30px;
+    width: 30px;
+    background-color: #5E548E;
+    border: 3px solid #9F86C0;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .turns-box {
+        width: 100%;
+    }
+    .turns, h1, .score-board {
+        margin: 20px;
+    }
+    
+  }
+
+
+.score-board {
+    background-color: #5E548E;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    font-size:x-large;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+    .options {
+        margin: 20px;
+    }
+  }
+
+.options {
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+
+.options:hover {
+    border: 5px solid #5E548E;
+}
+
+#rock {
+    background-image: url("rock.jpg");
+    background-size: cover;
+}
+
+#paper {
+    background-image: url("paper.avif");
+    background-size: cover;
+}
+
+#scissors {
+    background-image: url("scissors.png");
+    background-size: cover;
+}
+
+#msg {
+    margin-top: 30px;
+    display: none;
+}
+
+.user, .computer {
+    margin-top: 15px;
+}
+
+#result {
+    display: none;
+    font-size: 40px;
+}
+
+#newgame {
+    display: none;
+    padding: 10px;
+    border-radius: 15%;
+    color: #231942;
+}
