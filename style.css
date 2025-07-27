@@ -35,6 +35,9 @@ body {
     .turns, h1, .score-board {
         margin: 20px;
     }
+    h1 {
+        text-align: center;
+    }
     
   }
 
